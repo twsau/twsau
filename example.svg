@@ -2,17 +2,25 @@
     <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
-            img {
-                animation: spin 2s infinite;
+            h1 {
+                animation: animate 2s linear infinite;
+                background-color: blue;
+                color: red;
+                display: grid;
+                place-items: center;
+                text-align: center;
+                position: fixed;
+                inset: 0;
             }
 
-            @keyframes spin {
+            @keyframes animate {
                 to {
-                    transform: rotate(360deg)
+                    filter: hue-rotate(360deg);
+                    transform: rotate(360deg);
                 }
             }
             </style>
-            <img src="https://media4.giphy.com/media/TcdpZwYDPlWXC/giphy.gif"  width="600" height="300"/>
+            <h1>hello world</h1>
         </div>
     </foreignObject>
 </svg>
